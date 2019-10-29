@@ -1,0 +1,11 @@
+const readlineSync = require("readline-sync");
+let salary = readlineSync.question("\n Annual salary: ");
+salary = salary/24;
+let pretax = salary * .93;
+let fed =  pretax * .157;
+let sit =  pretax * .0447;
+let sst = pretax * .062;
+let med = pretax * .0145;
+let total = pretax - (fed + sit + sst + med);
+total = total.toLocaleString("en", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+console.log("\nYour take-home pay each check will be $" + total + ".");
