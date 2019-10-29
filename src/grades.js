@@ -33,4 +33,4 @@ let qzFinal = qzAVG * qzWeight;
 let tsFinal = tsAVG * tsWeight;
 let finalGrade = hwFinal + qzFinal + tsFinal;
 finalGrade=finalGrade.toLocaleString("en", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-console.log("\nYour marking period grade is " + finalGrade+ "%.")
+console.log("\nYour marking period grade is " + finalGrade+ "%.");
